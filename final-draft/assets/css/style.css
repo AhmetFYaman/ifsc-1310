@@ -370,6 +370,62 @@ footer#colophon {
   color: #fff;
 }
 
+/* ---------------FAQ Section----------------- */
+
+
+
+details{
+    border-bottom: 1px solid #3F3B75;   
+    margin-bottom: 10px; 
+    transition-delay: 1s;
+}
+
+details summary{
+    font-size : 2em;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #3F3B75;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+    padding: 7px;
+    margin: 8px 0;
+}
+
+
+details p{
+    font-size: 1.2em;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #3F3B75;
+    padding: 10px;
+    margin: 0 0 10px 40px;
+}
+
+section#faq h2 {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 20px auto 40px;
+    color: #00C9B1;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+}
+
+
+/* ---------------Telescopes----------------- */
+
+article.telescopes {
+    background-color: #F2F5F8;
+    color: #0A0E1A;
+    box-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
+}
+/* 
+article.telescopes img{
+    width: 460px;
+    height: auto;
+}
+ */
+
 /* ---------------Media Queries----------------- */
 
 @media screen and (max-width: 600px) {

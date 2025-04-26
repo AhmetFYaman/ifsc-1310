@@ -1,0 +1,476 @@
+/* Color Theme 
+#0B1E3C	Hero background, nav bars
+#FFB100	Buttons, CTAs, active elements
+#3F3B75	Section backgrounds, cards
+#00C9B1	Links, hover effects
+#F2F5F8	Text, icons, UI highlights
+*/
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+
+.container {
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.img-right {
+float: right;
+margin: 10px 0 10px 20px;
+border: 1px solid #c0c0c0;
+padding: 5px;
+max-width:33%;
+}
+
+.img-left {
+float: left;
+margin: 10px 20px 10px 0;
+border: 1px solid #c0c0c0;
+padding: 5px;
+}
+
+.img-center {
+display: block;
+margin: 20px auto;
+border: 1px solid #c0c0c0;
+padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+/* ----- Global Styles ---- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3F3B75;
+    background-color: #F2F5F8;
+    margin: 0;
+}
+
+header.primary {
+
+    color: #F2F5F8;
+    padding: 6em 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+
+
+}
+
+header.primary::before {
+    content: "";
+    background-image: url("../img/hero-bg.png");
+    background-size: cover;
+
+
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+
+}
+header.primary h1 {
+    font-size: 3.2rem;
+    margin: 20px 0;
+    position: relative;;
+  }
+
+header.primary h1 a {
+    color: #ffffff;
+    background-image: url("../img/Nasa-logo.png");
+    display: block;
+    width: 358px;
+    height: 280px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+  
+header.primary h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+
+    text-shadow:  /* something like simple outline */
+        -0.7px -0.7px 0 rgba(0, 51, 46, 0.4),
+         0.7px -0.7px 0 rgba(0, 66, 59, 0.4),
+        -0.7px  0.7px 0 rgba(0, 58, 51, 0.4),
+         0.7px  0.7px 0 rgba(0, 56, 50, 0.4),
+         0 0 10px rgba(0, 56, 50, 0.3); 
+    margin: 20px auto 40px;
+    position: relative;
+}
+  
+header.primary nav ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+}
+  
+header.primary nav li {
+    list-style-type: none;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+    padding: 0;
+    width: 20%;
+}
+  
+header.primary nav a:link,
+header.primary nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #000000;
+    background-color: #3F3B75;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 0.6s;
+    display: block;
+}
+  
+header.primary nav a:hover,
+header.primary nav a:active {
+    background-color: #00C9B1;
+}
+
+/* ----- Section Content ---- */
+section#content {
+    padding: 2em 0;
+}
+
+section#content h2 {
+    font-size: 2.5em;
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 20px auto 40px;
+    color: #00C9B1;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+}
+
+section#content h3{
+    color: #3F3B75;
+    font-size:1.5rem;
+    font-family: 'Saira Condensed', sans-serif;
+  }
+  
+
+section#content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #F2F5F8;
+    box-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+}
+section#content th{
+    background-color: #3F3B75;
+    color: #F2F5F8;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section#content td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #3F3B75;
+    font-family: 'Saira Condensed', sans-serif;
+}
+section#content tr:nth-child(even){
+    background-color: #F2F5F8;
+}
+section#content tr:hover {
+    background-color: #00C9B1;
+    color: #F2F5F8;
+    transition: 0.3s;
+}
+
+section#content caption{
+    font-size: 1.2rem;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #3F3B75;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ---------------- Articles ------------- */
+section#articles {
+    padding: 2em 0;
+    background-color: #1F2235;
+    border-bottom: 1px solid #00C9B1;
+    color: #F2F5F8;
+
+}
+section#articles .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 0 4em 0;
+}
+
+section#articles h2,
+#content h2 {
+    flex: 0 0 100%;
+    font-size: 2.5em;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #c1fff8;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+    text-align: center;
+}
+#articles article.post {
+    width:30%;
+    padding: 1em;
+    background-color: #F2F5F8;
+    color: #0A0E1A;
+    box-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+    border-radius: 10px;
+    
+}
+
+#articles article.post h2 {
+    font-size: 1.5em;
+    text-shadow: none;
+}
+#articles article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+
+    
+
+}
+
+
+#articles article figcaption,
+#articles article footer {
+    font-size: 0.8em;
+    color: #c0c0c0;
+    text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+    color: #3F3B75;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.514); 
+
+}
+
+#articles .post figure{
+    margin: 0;
+}
+
+#articles .post img {
+    border-radius: 10px;
+}
+
+#articles p {
+    padding: 0 20px;
+    margin: 0;
+}
+
+#articles .post footer {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* ----- Aside ---- */
+aside[role="complementary"] {
+    padding: 2.5em;
+    background-color: #F2F5F8;
+}
+
+aside .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 50px;
+}
+
+aside article.widget {
+    flex:1;
+}
+
+.widget.overview table{
+    font-size: 0.7em;
+    border-collapse: collapse;
+    width: 100%;
+}
+.widget.overview th,
+.widget.overview td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #3F3B75;
+    font-family: 'Saira Condensed', sans-serif;
+}
+.widget.overview table td:nth-child(even) {
+    text-align: right;
+}
+  
+aside article a:link,
+aside article a:visited {
+    color: #3F3B75;
+    display: block;
+    margin-top: 1.2em;
+    letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+    display: none;
+}
+
+
+/* ----- Footer ---- */
+footer#colophon {
+    padding: 2em 0;
+    background-color: #3F3B75;
+    color: #F2F5F8;
+    text-align: center;
+}
+
+#colophon h6 {
+    padding: 20px;
+    font-size:  1.5em;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #F2F5F8;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+    margin: 0;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #fff;
+}
+
+/* ---------------FAQ Section----------------- */
+
+
+
+details{
+    border-bottom: 1px solid #3F3B75;   
+    margin-bottom: 10px; 
+    transition-delay: 1s;
+}
+
+details summary{
+    font-size : 2em;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #3F3B75;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+    padding: 7px;
+    margin: 8px 0;
+}
+
+
+details p{
+    font-size: 1.2em;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #3F3B75;
+    padding: 10px;
+    margin: 0 0 10px 40px;
+}
+
+section#faq h2 {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: 'Saira Condensed', sans-serif;
+    margin: 20px auto 40px;
+    color: #00C9B1;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+}
+
+
+/* ---------------Telescopes----------------- */
+
+article.telescopes {
+    background-color: #F2F5F8;
+    color: #0A0E1A;
+    box-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-bottom: 20px;
+}
+
+article.telescopes img {
+    width: 460px;
+    height: auto;
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+/* 
+article.telescopes img{
+    width: 460px;
+    height: auto;
+}
+ */
+
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+    header.primary nav ul {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 400px;
+    }
+  
+    header.primary nav ul li {
+        margin-bottom: 10px;
+        width: 400px;
+    }
+  
+    header.primary nav ul li a {
+        display: block;
+    }
+  
+    section#articles .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: #00C9B1;
+        padding: 0 0 4em 0;
+    }
+  
+    #articles article.post {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    
+    aside .container {
+        flex-direction: column;
+    }
+    
+}
