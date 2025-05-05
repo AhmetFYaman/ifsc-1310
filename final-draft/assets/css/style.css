@@ -161,7 +161,7 @@ section#content {
 }
 
 section#content h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-family: 'Saira Condensed', sans-serif;
     margin: 20px auto 40px;
     color: #00C9B1;
@@ -381,7 +381,7 @@ details{
 }
 
 details summary{
-    font-size : 2em;
+    font-size : 1.5em;
     font-family: 'Saira Condensed', sans-serif;
     color: #3F3B75;
     text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
@@ -400,7 +400,7 @@ details p{
 
 section#faq h2 {
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3em;
     font-family: 'Saira Condensed', sans-serif;
     margin: 20px auto 40px;
     color: #00C9B1;
@@ -417,18 +417,43 @@ article.telescopes {
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 1em;
+    margin-bottom: 20px;
 }
-/* 
-article.telescopes img{
+
+article.telescopes img {
     width: 460px;
     height: auto;
+    margin: 20px 20px;
+    border-radius: 10px;
 }
- */
+
+#early-telescopes div.container h2,
+#modern-telescopes div.container h2,
+#golden-age-telescopes div.container h2 
+
+{
+    font-size: 2em;
+    font-family: 'Saira Condensed', sans-serif;
+    color: #3F3B75; /*dark purple */
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+    text-align: center; 
+
+}
+article.telescopes div h2 a{
+    color: #3F3B75; /*dark purple */
+    text-decoration: none;
+    text-align: center; 
+
+    font-family: 'Saira Condensed', sans-serif;
+    text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
+}
 
 /* ---------------Media Queries----------------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     header.primary nav ul {
         flex-direction: column;
         margin: 0 auto;
@@ -460,6 +485,17 @@ article.telescopes img{
     
     aside .container {
         flex-direction: column;
+    }
+
+    article.telescopes {
+        flex-direction: column;
+        align-items: center;
+    }
+        article.telescopes img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
     }
     
 }

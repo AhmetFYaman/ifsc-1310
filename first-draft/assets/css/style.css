@@ -417,17 +417,7 @@ article.telescopes {
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 1em;
-    margin-bottom: 20px;
-}
-
-article.telescopes img {
-    width: 460px;
-    height: auto;
-    margin: 20px 20px;
-    border-radius: 10px;
 }
 /* 
 article.telescopes img{
@@ -435,7 +425,6 @@ article.telescopes img{
     height: auto;
 }
  */
-
 
 /* ---------------Media Queries----------------- */
 
