@@ -1,39 +1,36 @@
-.gallery img {
-	display: block;
-	margin: 20px;
+body{
+    background-color:darkgray;
 }
-.gallery {
-	height: 357px;
-	width: 540px;
-	margin-right: auto;
-	margin-left: auto;
-	overflow: hidden;
-	background-color: #EDEDED;
-	border: 1px solid #CCC;
+
+img{
+    max-width:100%;
 }
-.quotes blockquote {
-	background-color: #EDEDED;
-	padding: 20px;
-	border: 1px solid #CCC;
-	margin-top: -10px;
-	margin-bottom: 20px;
+
+.container{
+    margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
 }
-body {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	height: 50px;
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
 }
-.ticker {
-	list-style-type: none;
-	margin: 0px;
-	padding: 20px;
-	background-color: #EDEDED;
-	border: 1px solid #CCC;
-	width: 400px;
-}
-.ticker li a {
-	display: block;
-	line-height: 20px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 20px;
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
 }

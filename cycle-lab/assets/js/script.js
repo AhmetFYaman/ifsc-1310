@@ -1,19 +1,16 @@
 
 $(document).ready(function() {
-    $('.gallery').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
-	
-	$('.quotes').cycle({
-		 fx:      'fade', 
-		 speed:    2500, 
-		 timeout:  5000 
-	});
-	
-	$('ul.ticker').cycle({
-		 fx:      'scrollHorz', 
-		 speed:    2500, 
-		 timeout:  5000 
-	});
-	
+
+    $('.fade').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      slide: 'div',
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+
+
 });
