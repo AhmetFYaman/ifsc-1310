@@ -54,6 +54,8 @@ img {
 
 /* ----- Global Styles ---- */
 
+
+/* in case I didnt style it further/more specifically, it will be the following body styling */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;

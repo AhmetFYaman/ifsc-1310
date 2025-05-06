@@ -34,3 +34,25 @@ img{
 {
     color:black;
 }
+
+.quotes blockquote {
+	background-color: #EDEDED;
+	padding: 20px;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.5em;
+    color: #333;
+ 
+	border: 1px solid #CCC;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.quotes blockquote p {
+    margin: 0;
+    padding: 0;
+}
+
+.quotes {
+    max-width: 800px;
+}

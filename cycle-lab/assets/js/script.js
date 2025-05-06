@@ -9,7 +9,19 @@ $(document).ready(function() {
       slide: 'div',
       cssEase: 'linear',
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 3000
+    });
+
+    $('.quotes').slick({
+      dots: false,
+      infinite: true,
+      speed: 1000,
+      autoplay: true,
+      arrows: false, /*arrows around are hidden*/
+
+      autoplaySpeed: 500,
+      fade: true,
+      cssEase: 'linear'
     });
 
 
