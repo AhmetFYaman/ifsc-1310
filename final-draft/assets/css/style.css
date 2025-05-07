@@ -412,25 +412,29 @@ section#faq h2 {
 
 /* ---------------Telescopes----------------- */
 
+
 article.telescopes {
     background-color: #F2F5F8;
     color: #0A0E1A;
     box-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
-
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-bottom: 1em;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 article.telescopes img {
     width: 460px;
     height: auto;
+    padding:20px;
+    padding-right: 40px;
     margin: 20px 20px;
     border-radius: 10px;
 }
+
 
 #early-telescopes div.container h2,
 #modern-telescopes div.container h2,
@@ -442,6 +446,7 @@ article.telescopes img {
     color: #3F3B75; /*dark purple */
     text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
     text-align: center; 
+    margin-bottom:5px;
 
 }
 article.telescopes div h2 a{
@@ -452,6 +457,38 @@ article.telescopes div h2 a{
     font-family: 'Saira Condensed', sans-serif;
     text-shadow: 0 0 10px rgba(0, 201, 177, 0.4); /* Galactic Teal */
 }
+
+article.telescopes div p{
+    margin-top: 5px;
+}
+
+
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: grey;
+}
+
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus
+{
+    color:black;
+}
+
 
 /* ---------------Media Queries----------------- */
 
@@ -500,4 +537,3 @@ article.telescopes div h2 a{
         }
     }
     
-}
